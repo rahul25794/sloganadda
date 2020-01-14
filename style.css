@@ -1,0 +1,371 @@
+*{
+font-family:"Segoe UI", Verdana, Helvetica, sans-serif;
+-webkit-font-smoothing:antialiased;
+transition:300ms;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+    background: #428bca;
+}
+::-webkit-scrollbar-thumb:active,::-webkit-scrollbar-thumb:hover {
+	background: #d9534f; 
+}
+html{
+min-height:100%;
+}
+
+a:hover{
+color:#d9534f;
+}
+body{
+background-color: #eee;
+background:#eee url('bg1.jpg');
+background-attachment:fixed;
+background-position: center center;
+background-size:100% auto;
+background-repeat: no-repeat;
+height:100%;
+}
+#header{
+z-index:10;
+left:0;
+right:0;
+top:0;
+height: 50px;
+box-shadow: 0 0 5px black;
+background-color: #428bca;
+background: linear-gradient(to bottom,#428bca 0,#2d6ca2 100%);
+}
+#menu-btn{
+    margin: 5px;
+border: thick solid white;
+border-radius: 50%;
+padding: 5px;
+min-height: 40px;
+min-width: 40px;
+text-align: center;
+vertical-align: middle;
+font-size:15px;
+font-weight: 800;
+color: white;
+}
+.menu-btn{
+    margin: 5px;
+}
+#menu-btn:hover,.mybtn:hover{
+    background: white;
+    box-shadow: 0px 0px 30px #333;
+    color:#428bca;
+    border-radius: 50%;
+    text-decoration: none;
+    cursor: pointer;
+}
+.name{
+    height: 100%;
+    color: white;
+    font-weight: 400;
+    padding-top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mybtn:active{
+    border:4px white solid;
+}
+.mybtn{
+    border: thick white solid;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 3px;
+    color: white;
+    font-size: 18px;
+    background: #428bca;
+}
+.icon-bar{
+    display: block;
+    background: white;
+    min-height: 2px;
+    content: " ";
+    margin: 3px;
+    min-width: 15px;
+}
+.box-black{
+    background-color: black;
+    background: rgba(0, 0, 0, 0.75);
+}
+.box{
+    background-color: white;
+    box-shadow: 0px 0px 3px grey;
+}
+.box-round{
+    border-radius: 5px;
+}
+.fixed{
+position:fixed;
+}
+ul,li{
+list-style:none;
+padding:0;
+}
+#mainbar{
+    padding: 0px;
+}
+#mainlogo{
+margin: 10px;
+height: 30px;
+z-index:20;
+}
+#search{
+    padding: 10px;
+}
+#mainbar>div{
+    padding: 0px;
+}
+.dropdown-menu>li>a{
+    color: #333;
+}
+.dropdown-menu>li>a:hover{
+    border-left: thick solid #d9534f;
+    color: #d9534f;
+    background-color: white;
+}
+.input{
+    margin-bottom: 10px;
+    border-radius: 0px;
+}
+.input:focus{
+    background: white; 
+}
+#banner{
+    box-shadow: 0px 0px 20px black;
+    position: relative;
+    top: 100px;
+    left: 0;
+    right: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #428bca;
+    background: rgba(66, 139, 202, 0.9);
+}
+.login-form{
+    position: relative;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 10px;
+    color: #333;
+    font-size: 13px;
+    min-height: 200px;
+    box-shadow: 0px 2px 3px silver;
+    text-align: left;
+}
+.instruction{
+    text-align: center;
+}
+#signup{
+    display: none;
+}
+#main_content{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 5px;
+min-height: 500px;
+text-align: center;
+max-width: 1000px;
+}
+#main_content>div{
+    padding: 0px;
+}
+.tile{
+    margin-bottom: 20px;
+    border-radius: 2px;
+    text-align: left;
+    max-width: 600px;
+    min-height:100px;
+    max-height: 1000px;
+    box-shadow: 0px 2px 3px #7C7C7C;
+    padding: 0px;
+}
+.form{
+    padding: 10px;
+    text-align: right;
+}
+.avatar{
+    height:40px;
+    width: 40px;
+    background-color: #eee;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+.title-holder{
+    float: left;
+    padding: 5px;
+    height: 50px;
+    margin: 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 500;
+    text-shadow: 0px 0px 2px silver;
+    font-size: 20px;
+    color:#333;
+    border-bottom: solid thin #eee;
+    vertical-align: bottom;
+}
+abbr[title],.time{
+    border: 0;
+    cursor: default;
+    font-size: 10px;
+    font-weight: 400;
+    color:#C7C7C7;
+    text-shadow: none;
+}
+.tag-holder{
+    float: left;
+    width: 100%;
+    padding: 5px;
+    min-height: 50px;
+}
+.img-holder{
+    padding: 0;
+    background: silver;
+    margin-bottom: 10px;
+}
+.bottom-container{
+    width: 100%;
+    padding: 0;
+    position: relative;
+    bottom: 0;
+    float: left;
+}
+.comment-container{
+    max-height: 250px;
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: inset 0px 2px 2px silver;
+}
+.comment{
+    font-size: 12px;
+    width: 100%;
+    min-height: 50px;
+    overflow: auto;
+    padding: 5px;
+    border-top: solid thin #eee;
+}
+.comment:hover{
+    background: #eee;
+}
+.morecomment{
+    width: 100%;
+    color: #428bca;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+}
+.morecomment:hover{
+    text-decoration: underline;
+    background-color: #428bca;
+    color:white;
+}
+.input-group{
+    width: 100%;
+}
+.commentor{
+    margin-right: 3px;
+    font-weight: 700;
+}
+.comment-box{
+    margin:0;
+    background: transparent;
+    border-top: solid thin #eee;
+    width: 100%;
+}
+.noavatar{
+    background-color: #d9534f;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+}
+.cbtn{
+    font-size: 14px;
+    margin: 0px;
+    border: 0px;
+    height: 34px;;
+}
+.sbtn{
+    border-radius: 50%;
+    border: solid thin white;
+}
+#slogan-text{
+    height: 100px;
+    padding: 10px;
+    font-size: 20px;
+}
+#success-upload,#uploadprogress{
+    display: none;
+}
+
+#searchbox{
+    border: 0;
+    border-radius: 70px;
+    box-shadow: none;
+}
+.searchback{
+    border-radius: 70px;
+    background-color: white;
+    margin: 10px;
+    width: auto;
+}
+.taglist{
+    padding: 10px;
+    margin-top: 20px;
+}
+.taglist>ul>li{
+    padding: 5px;
+    font-size: 18px;
+    border-left: solid 3px white;
+}
+.taglist>ul>li:hover{
+    background: #eee;
+    border-left: solid 3px #d9534f;
+}
+#loading{
+    display: none;
+}
+.load{
+    font-size: 25px;
+    color:white;
+    text-shadow: 0px 0px 10px black;
+}
+#status{
+    width: 600px;
+}
+.waitstate{
+    display: none;
+}
+.savebtn{
+    background-color: #d9534f;
+}
+#footer{
+    position: relative;
+    bottom: 0;
+    background-color: #333;
+    color: grey;
+}
